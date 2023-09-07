@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> Home page of Real Estate </title>
+    <link rel ="stylesheet"  href="Styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+	<div id= "header">
+        <h1></h1>
+    </div>
+        <div class="Logo">
+            <img src="Logo.jpeg" alt="Logo" width="97px" height="97px">
+        </div>
+        <div class ="coName">
+            <h1>Homeverse</h1>
+        </div>
+    <main>
+        <article>
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <p class="hero-subtitle">
+                            
+                            <i class="fa fa-home">&nbsp</i><span>Real Estate Agency</span>
+                        </p>
+                        <h2 class = "h1 hero-title">Find your Dream Home With Us</h2>
+                        <p class="hero-text">
+                            Homeverse has been the number one and most Trusted Real Estate Agency in Canada for the last Decade
+
+                        </p>
+                </div>
+            </section>
+        </article>
+    </main>
+    <div class = "Navigation bar">
+        <nav>
+            <ul>
+                <li><a href= "#"><i class="fa fa-home">&nbsp</i>Home</a></li>
+                <li><a href= "#"><i class="fa fa-user">&nbsp</i>About</a></li>
+                <li><a href="Agents.html"><i class="fa fa-book">&nbsp</i>Services</a></li>
+                <li><a href="#"><i class="fa fa-home">&nbsp</i>Real Estate Homes</a></li>
+                <li><a href="ContactPage.html"><i class="fa fa-envelope">&nbsp</i>Contact Page</a></li>
+            </ul>
+        </nav>
+    </div> 
+    <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper" class="center">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="House 3.jpeg" class="center" width="100%" height="100%"></div>
+              <div class="swiper-slide"><img src="Wade.jpeg" class="center" width="25%" height="10%"></div>
+              <div class="swiper-slide"><img src="Approvals.jpeg" class="center" width="100%" height="100%" ></div>
+              <div class="swiper-slide"><img src="Canada.webp" class="center" width="25%" height="25%"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            
+        </div>
+    </div>
+    <div class="animation">
+        <span class="text1">Buy and Sell Houses With Us, Check out Our Real Esate Listings,</span>
+        <br>
+        <span class="text2">Top Agents in the Industry,</span>
+        <br>
+        <br>
+        <span class="text3">Mortgage Approvals,</span>
+        <br>
+        <span class="text4">All across Canada!</span>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        autoplay:{
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+       
+      });
+</script>
+</body>
+</html> 
